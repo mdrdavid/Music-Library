@@ -49,6 +49,16 @@ pnpm dev
 
 Open http://localhost:3000 in your browser.
 
+### Seed Dummy Songs (Optional)
+
+To test the app with sample music, run:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_url NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key SUPABASE_SERVICE_ROLE_KEY=your_role_key node scripts/seed-songs.js
+```
+
+This will add 5 test songs from SoundHelix to your database. Remove them anytime by deleting from the songs table.
+
 ## Database Schema
 
 The `songs` table structure:
